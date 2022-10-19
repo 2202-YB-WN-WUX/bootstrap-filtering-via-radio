@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bootstrap modals, cards, & masonry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- hero -->
+  <div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Fidel's Cafe</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Brothers & sisters of the revolution! Welcome to Fidel’s. Where the coffee is Cuban and the
+        hospitality is pure New Zealand.
+        This iconic Wellington institution has made its mark as a bohemian bastion on upper Cuba Street. From an early
+        morning espresso, midday brunch, or an afternoon beer; this bustling landmark specialises in being whatever you
+        want it to be.</p>
+    </div>
+  </div>
+
+  <!-- list -->
+  <div id="second-section" class="container custom-section p-5">
+    <div class="col-12 text-center">
+      <h2 class="mb-4">Today's Menu</h2>
+      <span id="filter-label" class="mx-1">Filter via: </span>
+      <div class="btn-group mb-4" role="group" aria-label="filter categories">
+
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+
+          <input type="radio" class="btn-check" name="btnradio" id="all" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="all">All</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="glutenFree" autocomplete="off">
+          <label class="btn btn-outline-primary" for="glutenFree">Gluten Free</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="vegan" autocomplete="off">
+          <label class="btn btn-outline-primary" for="vegan">Vegan</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="dairyFree" autocomplete="off">
+          <label class="btn btn-outline-primary" for="dairyFree">Dairy Free</label>
+        </div>
+
+      </div>
+    </div>
+    <div class="row" id="product-container">
+      <!-- cards rendered here -->
+    </div>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+    async></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
